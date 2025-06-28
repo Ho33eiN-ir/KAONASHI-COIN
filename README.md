@@ -1,0 +1,1 @@
+# KAONASHI-COIN
