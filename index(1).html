@@ -128,19 +128,3 @@
   <p>© 2025 KAONASHI COIN. All rights reserved.</p>
 </footer>
 
-<script>
-  async function fetchPrices() {
-    try {
-      const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd');
-      const data = await res.json();
-      document.getElementById('btc').innerText = 'Bitcoin: $' + data.bitcoin.usd;
-      document.getElementById('eth').innerText = 'Ethereum: $' + data.ethereum.usd;
-    } catch (e) {
-      console.error('Error fetching prices');
-    }
-  }
-  fetchPrices();
-</script>
-
-</body>
-</html>
